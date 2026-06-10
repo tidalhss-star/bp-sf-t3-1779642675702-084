@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 강남 셔츠룸의 실체와 마포의 밤</title>
+    <link rel="canonical" href="https://sf-t3-1779642675702-084.pages.dev/blog">
+    <meta name="description" content="단조로운 밤은 지루하다. 마포에서 시작하여 강남의 네온으로 끝나는 도발적인 여정. 평범함을 거부하는 당신을 위해 준비된 최상급 강남 셔츠룸의 실체.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 룸살롱, 고급 유흥, 임원 접대,成名, 에디토리얼, VIP 라운지">
+    <meta name="author" content="aegis-warmer">
+    <!-- PBN Design System & Theme -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="블로그 | 강남 셔츠룸의 실체와 마포의 밤">
+    <meta property="og:description" content="평범함을 거부하는 당신을 위한 도발적인 여정.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-084.pages.dev/blog">
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --color-bg: #050505;
+            --color-text-main: #e0e0e0;
+            --color-text-muted: #888888;
+            --color-accent: #d4af37; /* Gold */
+            --color-surface: #111111;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-serif: 'Georgia', serif;
+            --spacing-unit: 1.5rem;
+            --max-width: 1200px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+        a:hover { color: var(--color-accent); }
+        
+        /* Typography */
+        h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1rem; }
+        h1 { font-size: 2.5rem; line-height: 1.2; }
+        h2 { font-size: 2rem; border-bottom: 1px solid var(--color-surface); padding-bottom: 1rem; }
+        h3 { font-size: 1.5rem; color: var(--color-accent); }
+        p { margin-bottom: 1.5rem; color: #cccccc; font-weight: 300; }
+        
+        /* Layout Utilities */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+        .section { padding: 4rem 0; }
+        
+        /* Header & Nav */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(5, 5, 5, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-surface);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+        }
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .nav-toggle span {
+            width: 25px;
+            height: 2px;
+            background-color: var(--color-text-main);
+        }
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-menu a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Content Styles */
+        .blog-header {
+            text-align: center;
+            padding: 6rem 0 4rem;
+        }
+        .blog-meta {
+            font-family: var(--font-serif);
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .highlight-box {
+            background: var(--color-surface);
+            border-left: 3px solid var(--color-accent);
+            padding: 2rem;
+            margin: 2rem 0;
+            font-family: var(--font-serif);
+        }
+        .faq-section {
+            margin-top: 4rem;
+            border-top: 1px solid var(--color-surface);
+            padding-top: 2rem;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-question {
+            font-weight: 700;
+            color: var(--color-text-main);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .faq-answer {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: var(--color-accent);
+            color: #000;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--color-bg);
+                flex-direction: column;
+                padding: 2rem;
+                border-bottom: 1px solid var(--color-surface);
+            }
+            .nav-menu.active { display: flex; }
+            .nav-toggle { display: flex; }
+            h1 { font-size: 2rem; }
+            .section { padding: 2rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">AEGIS WARMER</a>
+            <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="/">홈</a>
+                <a href="/about">에디토리얼</a>
+                <a href="/blog" style="color: var(--color-accent);">블로그</a>
+                <a href="/contact">문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <article class="article-content">
+                    <header class="blog-header">
+                        <div class="blog-meta">Posted by aegis-warmer | Category: Editorial</div>
+                        <h1>강남 셔츠룸: 마포의 화려함을 넘어선 절대적 우위</h1>
+                    </header>
+
+                    <div class="content-body">
+                        <p>당신은 여전히 '마포'에 머무르고 있는가? 홍대의 거리, 연남동의 골목. 그곳의 유흥은 젊음의 분출일 뿐, 진정한 권력과 품격을 논하는 자리라 하기엔 부족하다. 우리는 단조로운 밤을 거부한다. 평범한 접대는 이제 그만이다.</p>
+
+                        <p>진정한 <strong>강남 셔츠룸</strong>의 세계는 당신에게 새로운 차원의 경험을 선사한다. 이곳은 단순한 술자리가 아니다. 이곳은 비즈니스가 성사되고, 관계가 재정의되며, 당신의 사회적 지위가 확인되는 무대다.</p>
+
+                        <div class="highlight-box">
+                            "강남의 네온 사인은 허영이 아니다. 그것은 성공한 자들을 위한 등대다. 마포의 소란스러움을 뒤로하고, 침묵이 금보다 귀한 이곳으로 오라."
+                        </div>
+
+                        <h2>왜 하필 강남인가?</h2>
+                        <p>마포의 룸살롱이 친숙함과 접근성을卖한다면, 강남은 '배타성'과 '완벽함'을 판다. 최고급音响 시스템, 시각을 압도하는 인테리어, 그리고 무엇보다 당신의 욕구를 읽기 전에 먼저 채워주는 프로페셔널한 서비스. 이것이 바로 <strong>강남 셔츠룸</strong>이 가진 힘이다.</p>
+                        
+                        <p>임원 접대든, 중요한 비즈니스 미팅이든, 혹은 스스로에게 주는 최고의 보상든. 장소 선택은 곧 당신의 안목을 드러내는 행위다. 어중간한 선택은 곧 실패를 의미한다. 우리는 당신에게 실패를許容하지 않는다.</p>
+
+                        <h3>서비스의 기준을 다시 세우다</h3>
+                        <p>기다림은 없다. 어색함은 없다. 들어서는 순간부터 당신은 왕이 되어야 한다. 우리의 매니저들은 당신의 취향을 분석하고, 최적의 분위기를 조성한다. 이것이 에디토리얼 럭셔리가 추구하는 바이다.</p>
+
+                        <div class="faq-section">
+                            <h2>Frequently Asked Questions</h2>
+                            
+                            <div class="faq-item">
+                                <span class="faq-question">Q. 마포와 강남 룸살롱의 가장 큰 차이점은 무엇인가요?</span>
+                                <p class="faq-answer">마포가 젊음과 에너지에 집중한다면, 강남은 프라이버시, 고급스러운 시설, 그리고 격조 높은 서비스를 최우선으로 합니다. 비즈니스 미팅이나 격식 있는 접대에는 강남이 압도적으로 유리합니다.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <span class="faq-question">Q. 예약 없이 방문해도 되나요?</span>
+                                <p class="faq-answer">강남 최상급 셔츠룸은 완전 예약제인 경우가 많습니다. 특히 금요일이나 주말에는 사전 예약 없인 입장이 불가능할 수 있으니, 원활한 이용을 위해 미리 문의하시기 바랍니다.</p>
+                            </div>
+
+                            <div class="faq-item">
+                                <span class="faq-question">Q. 드레스 코드가 있나요?</span>
+                                <p class="faq-answer">네, 있습니다. 셔츠룸이라는 이름에 걸맞게 단정한 복장을 권장합니다. 당신의 품격이 공간의 분위기를 결정합니다.</p>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <a href="tel:010-0000-0000" class="cta-button">지금 바로 예약하기</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer style="border-top: 1px solid var(--color-surface); padding: 2rem 0; text-align: center; color: var(--color-text-muted); font-size: 0.8rem;">
+        <div class="container">
+            <p>&copy; 2024 AEGIS WARMER. All rights reserved.</p>
+            <p>Seoul, Gangnam & Mapo District.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
